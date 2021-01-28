@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(232, 234, 232);
+  color: rgb(23, 44, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+}
+li {
+display: inline;
+  list-style-type: none;
+  padding: 1em;
+}
+nav {
+ display: flex;
+  flex-direction: row;
+  font-size: 1.1em;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact-info{
+margin-right: 2%;
+}
+.menu{
+    margin-left: 2%;
+}
+.mountain {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  max-height: 80%;
+}
+.name {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2em;
+  margin-left: 10%;
+}
+.schedule-btn {
+  border-radius: 20px;
+  background-color: rgba(145,91,96, 0.7 );
+  color: color: rgb(23, 44, 48);
+ font-family: "Fira Sans Condensed", sans-serif;
+ font-size: 1em;    
+  margin-right: 3%;
+  padding: 0.5em;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(145,91,96, 0.3 );
+    transition: all 200ms ease-in-out;
+}
+
+@media screen and (max-width: 500px){
+.schedule-btn{
+    padding: 0.3em;
+}
+}
