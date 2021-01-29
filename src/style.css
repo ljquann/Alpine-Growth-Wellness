@@ -60,7 +60,7 @@ nav {
   position: relative;
   right: 0.3em;
   height: 6em;
-  width: 10em;
+  width: 9em;
   z-index: -1;
 }
 .menu {
@@ -80,7 +80,7 @@ nav {
   font-size: 1.9em;
   position: relative;
   top: 0.5em;
-  right: 0.8em;
+  right: 0.6em;
 }
 .schedule-btn {
   border-radius: 20px;
