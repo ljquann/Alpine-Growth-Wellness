@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1em;
 }
 html {
   margin: 0;
@@ -49,7 +49,19 @@ nav {
 }
 .description {
   font-size: 0.5em;
-  margin-left: 45%;
+  margin: 0% 0% 0% 10%;
+  padding: 0;
+}
+.left-side {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  position: relative;
+  right: 0.3em;
+  height: 6em;
+  width: 10em;
+  z-index: -1;
 }
 .menu {
   margin: 2% 0% 0% 0%;
@@ -65,8 +77,10 @@ nav {
   display: flex;
   flex-direction: column;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 2em;
-  margin-left: 10%;
+  font-size: 1.9em;
+  position: relative;
+  top: 0.5em;
+  right: 0.8em;
 }
 .schedule-btn {
   border-radius: 20px;
@@ -77,6 +91,7 @@ nav {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 1em;
   margin-right: 3%;
+  margin-top: 1em;
   max-height: 3em;
   padding: 0.5em;
 }
@@ -90,7 +105,7 @@ button:hover {
   background-color: rgba(145, 91, 96, 0.3);
   transition: all 200ms ease-in-out;
 }
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 659px) {
   .dropbtn {
     background-color: rgba(145, 91, 96, 0.5);
     border: 1px solid rgba(23, 44, 48, 0.7);
@@ -110,9 +125,6 @@ button:hover {
   }
   .menu {
     display: none;
-  }
-  .name {
-    margin-left: 25%;
   }
   .schedule-btn {
     display: none;
@@ -134,12 +146,26 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 660px) {
   .dropdown {
     display: none;
   }
   .dropbtn {
     display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .dropdown {
+    margin-left: 2%;
+  }
+  .logo {
+    width: 6em;
+    height: 3em;
+    top: 0.5em;
+  }
+  .name {
+    font-size: 1.2em;
+    right: 0.4em;
   }
 }
 @media all {
