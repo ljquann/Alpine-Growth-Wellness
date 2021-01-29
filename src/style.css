@@ -11,8 +11,24 @@ body {
   min-width: 100%;
   width: 100%;
 }
+footer {
+  background-color: rgba(131, 155, 151, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
 h1 {
   font-size: 1em;
+}
+h3 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2.5em;
+  padding: 0em 0.5em 0em 0.2em;
+}
+h4 {
+  padding: 0em 0.5em 0.5em 0.5em;
+  text-emphasis: bold;
 }
 header {
   display: flex;
@@ -38,6 +54,36 @@ nav {
   padding: 0;
   width: 100%;
 }
+.alert {
+  background-color: rgba(131, 155, 151, 0.1);
+  text-align: center;
+}
+.bio {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  padding: 1em;
+}
+.bio-left {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
+.bio-right {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
+.blurb {
+  font-size: 0.9em;
+  padding: 1.5em 0.3em 0.3em 0.3em;
+}
+.coded-by {
+  padding: 3em;
+  text-align: center;
+}
 .contact-info {
   margin: 1% 2%;
   padding: 0;
@@ -53,6 +99,15 @@ nav {
   font-size: 0.5em;
   margin: 0% 0% 0% 10%;
   padding: 0;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+.headshot {
+  box-shadow: 0.5em 0.5em 0.5em rgba(23, 44, 48, 0.7);
 }
 .left-side {
   display: flex;
@@ -98,6 +153,13 @@ nav {
   max-height: 3em;
   padding: 0.5em;
 }
+.welcome {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 3.5em;
+  margin: 0.5em;
+  padding: 1em 1em 0em 1em;
+  text-align: center;
+}
 a:hover {
   color: rgb(102, 65, 68);
   cursor: pointer;
@@ -108,7 +170,31 @@ button:hover {
   background-color: rgba(145, 91, 96, 0.3);
   transition: all 200ms ease-in-out;
 }
+@media screen and (max-width: 800px) {
+  .bio {
+    display: flex;
+    flex-direction: column;
+  }
+  .headshot {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 60%;
+  }
+}
 @media screen and (max-width: 659px) {
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  .bio {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
   .dropbtn {
     background-color: rgba(145, 91, 96, 0.5);
     border: 1px solid rgba(23, 44, 48, 0.7);
@@ -149,8 +235,24 @@ button:hover {
   }
 }
 @media screen and (max-width: 400px) {
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  .bio {
+    margin: 0;
+    padding: 0;
+  }
+  .coded-by {
+    padding: 0.5em;
+  }
   .dropdown {
     margin-left: 2%;
+  }
+  .footer-flex {
+    flex-direction: column;
   }
   .logo {
     width: 4.5em;
@@ -159,6 +261,9 @@ button:hover {
   }
   .name {
     font-size: 1.2em;
+  }
+  .welcome {
+    font-size: 2em;
   }
 }
 
