@@ -326,6 +326,9 @@ button:hover {
   .name {
     font-size: 1.2em;
   }
+  .services {
+    font-size: 2em;
+  }
   .welcome {
     font-size: 2em;
   }
