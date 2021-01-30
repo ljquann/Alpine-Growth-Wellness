@@ -6,6 +6,7 @@ body {
   background-color: rgb(232, 234, 232);
   color: rgb(23, 44, 48);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8em;
   margin: 0%;
   padding: 0%;
   min-width: 100%;
@@ -15,8 +16,8 @@ footer {
   background-color: rgba(131, 155, 151, 0.1);
   display: flex;
   flex-direction: column;
-  margin: 1em;
   padding: 1em;
+  width: 100%;
 }
 h1 {
   font-size: 1em;
@@ -39,11 +40,6 @@ header {
 html {
   margin: 0;
   padding: 0;
-}
-li {
-  display: inline;
-  list-style-type: none;
-  padding: 1em;
 }
 nav {
   background-color: rgba(131, 155, 151, 0.1);
@@ -81,13 +77,21 @@ nav {
   padding: 1.5em 0.3em 0.3em 0.3em;
 }
 .coded-by {
-  padding: 3em;
+  padding: 3em 3em 0.5em 3em;
   text-align: center;
+}
+.contact {
+  border: 1px solid rgba(23, 44, 48, 1);
+  box-shadow: 0.5em 0.5em 0.5em rgba(23, 44, 48, 0.5);
+  margin: 1em;
+  padding: 1.5em;
+  width: 30%;
 }
 .contact-info {
   margin: 1% 2%;
   padding: 0;
   font-size: 1.1em;
+  max-width: 30%;
 }
 .container {
   margin: 0%;
@@ -99,6 +103,9 @@ nav {
   font-size: 0.5em;
   margin: 0% 0% 0% 10%;
   padding: 0;
+}
+.disabled {
+  color: rgba(23, 44, 48, 0.5);
 }
 .footer-flex {
   display: flex;
@@ -124,6 +131,11 @@ nav {
 .menu {
   margin: 2% 0% 0% 0%;
 }
+.menu li {
+  display: inline;
+  list-style-type: none;
+  padding: 1em;
+}
 .mountain {
   display: flex;
   justify-content: center;
@@ -140,6 +152,26 @@ nav {
   top: 0.5em;
   right: 0.6em;
 }
+.pricing {
+  border: 1px solid rgba(23, 44, 48, 1);
+  box-shadow: 0.5em 0.5em 0.5em rgba(23, 44, 48, 0.5);
+  margin: 1em;
+  min-width: 300px;
+  padding: 1.5em;
+  width: 30%;
+}
+.services {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2.5em;
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+}
+.service-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0em 2em 2em 2em;
+}
 .schedule-btn {
   border-radius: 20px;
   border: 1px solid rgba(23, 44, 48, 0.8);
@@ -153,6 +185,17 @@ nav {
   max-height: 3em;
   padding: 0.5em;
 }
+.specialties {
+  border: 1px solid rgba(23, 44, 48, 1);
+  box-shadow: 0.5em 0.5em 0.5em rgba(23, 44, 48, 0.5);
+  margin: 1em;
+  padding: 1.5em;
+  width: 30%;
+}
+.specialties li {
+  list-style-type: none;
+  margin-left: 1em;
+}
 .welcome {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 3.5em;
@@ -161,6 +204,7 @@ nav {
   text-align: center;
 }
 a:hover {
+  background-color: rgba(145, 91, 96, 0.1);
   color: rgb(102, 65, 68);
   cursor: pointer;
   transition: all 200ms ease;
@@ -170,16 +214,34 @@ button:hover {
   background-color: rgba(145, 91, 96, 0.3);
   transition: all 200ms ease-in-out;
 }
+.disabled:hover {
+  background-color: transparent;
+  cursor: default;
+  color: rgba(23, 44, 48, 0.5);
+}
 @media screen and (max-width: 800px) {
   .bio {
     display: flex;
     flex-direction: column;
+  }
+  .contact {
+    width: 75%;
   }
   .headshot {
     display: block;
     margin: 0 auto;
     max-width: 50%;
     max-height: 60%;
+  }
+  .pricing {
+    width: 75%;
+  }
+  .service-body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .specialties {
+    width: 75%;
   }
 }
 @media screen and (max-width: 659px) {
